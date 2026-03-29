@@ -10,6 +10,7 @@ google_analytics: G-FNMDX3KNFD
 
 # Exclude these files from the build to prevent issues, especially with Mac Docker volumes
 exclude:
+  - __local
   - Keepfile
   - Gemfile
   - Gemfile.lock
@@ -20,5 +21,6 @@ exclude:
   - .bundle/
   - .agents/           # Hides your Antigravity agent rules
   - AGENTS.md          # Hides your cross-tool rules
+  - HACKING.md         # Personal notes
   - README.md          # Hides the root readme
   - "**/README.md"     # CRITICAL: Hides all readmes in subdirectories
