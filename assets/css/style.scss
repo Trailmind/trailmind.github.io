@@ -1,0 +1,9 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Slate-specific width override
+// The Slate theme uses the `.inner` class as its central wrapper for both the header and main content
+.inner {
+  max-width: 800px;
+}
