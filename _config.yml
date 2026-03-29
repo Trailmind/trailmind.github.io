@@ -1,4 +1,4 @@
-# Site basics
+# --- PUBLIC METADATA ---
 title: Orthogonal Thoughts
 description: by Trailmind
 
@@ -8,7 +8,8 @@ description: by Trailmind
 theme: jekyll-theme-slate
 google_analytics: G-FNMDX3KNFD
 
-# Exclude these files from the build to prevent issues, especially with Mac Docker volumes
+# --- INFRASTRUCTURE EXCLUDES ---
+# These are kept in public to keep the live website (_site) clean.
 exclude:
   - __local
   - Keepfile
@@ -16,11 +17,8 @@ exclude:
   - Gemfile.lock
   - _site
   - .devcontainer
-  - node_modules/
-  - vendor/
   - .bundle/
-  - .agents/           # Hides your Antigravity agent rules
-  - AGENTS.md          # Hides your cross-tool rules
-  - HACKING.md         # Personal notes
-  - README.md          # Hides the root readme
-  - "**/README.md"     # CRITICAL: Hides all readmes in subdirectories
+  - vendor/
+  - node_modules/
+  - .jekyll-cache/
+  - .jekyll-metadata
