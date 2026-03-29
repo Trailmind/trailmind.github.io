@@ -1,9 +1,24 @@
 # Site basics
-title: "Orthogonal Thoughts by Trailmind"
-description: ""
-
-# Exclude these files from the build to prevent issues, especially with Mac Docker volumes
-exclude: [Keepfile, Gemfile, Gemfile.lock, _site, .devcontainer]
+title: Orthogonal Thoughts
+description: by Trailmind
 
 # GitHub Pages requires themes to be set via remote_theme instead of the standard theme option
 # remote_theme: username/repo
+# ... unless we are using the github-pages supported theme
+theme: jekyll-theme-slate
+google_analytics: G-FNMDX3KNFD
+
+# Exclude these files from the build to prevent issues, especially with Mac Docker volumes
+exclude:
+  - Keepfile
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - .devcontainer
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .agents/           # Hides your Antigravity agent rules
+  - AGENTS.md          # Hides your cross-tool rules
+  - README.md          # Hides the root readme
+  - "**/README.md"     # CRITICAL: Hides all readmes in subdirectories
